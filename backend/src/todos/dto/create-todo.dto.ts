@@ -1,20 +1,17 @@
-
-
 export class CreateTodoDto {
-title : String; 
-description: String;
-completed: Boolean;
-priority: TodoPriority;  
-dueAt:  Date;
-completedAt: Date;
-userId: String;
-createdAt: Date;
-updatedAt: Date;
+title:       string;
+description: string;
+completed:   boolean;     
+priority:    TodoPriority;  
+dueAt:       Date;  
+completedAt: Date;   
+userId:      string;     
+createdAt:   Date;     
+updatedAt:   Date;   
 }
 
-enum TodoPriority{
+enum TodoPriority {
     LOW = 'LOW',
     MEDIUM = 'MEDIUM',
     HIGH = 'HIGH',
-
 }
