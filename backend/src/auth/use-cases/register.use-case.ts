@@ -14,7 +14,7 @@ private readonly jwtService: JwtService,
 private readonly logger: Logger,
 ){}    
 
-async executeSchedule(data: RegisterDto){
+async execute(data: RegisterDto){
  this.logger.log('Registering user ...');
  
  const existingUser = await this.findUserByEmailRepository.findByEmail(data.email);
